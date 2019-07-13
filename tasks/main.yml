@@ -1,0 +1,4 @@
+---
+
+- include: start_elk_container.yml
+- include: sysctl_options.yml

@@ -1,0 +1,11 @@
+---
+
+- name: Start ELK container.
+  docker_container:
+    name: cmaker-elk
+    image: sebp/elk:{{ ELK_VERSION }}
+    state: started
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"
